@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Pessoa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Cadastrar Pessoa</h1>
+    <div class="box">
+        <form action="" class="formulario">
+        <input type="text" class="nome" name="nome" placeholder="Nome" required>
+
+        <input type="text" class="tel" name="telefone" placeholder="Telefone" required>
+
+        <input type="text" class="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+        
+        <input type="email" class="email" name="email" placeholder="Email" required>
+
+        <select name="sexo" class="sexo" required>
+            <option value="" disabled selected>Selecione o sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao_informar">Prefiro não informar</option>
+        </select>
+        
+        <input type="text" class="cep" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required>
+
+        
+        <input type="text"  class="endereco" name="endereco" placeholder="Endereço" >
+
+       
+        <input type="text" class="numero" name="numero" placeholder="Número">
+        <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
